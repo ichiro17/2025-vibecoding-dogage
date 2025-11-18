@@ -1,0 +1,106 @@
+body {
+    font-family: 'Comic Sans MS', 'Segoe UI', Arial, sans-serif;
+    background: #FFEFD5;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #FFF8E7;
+    padding: 30px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.dog-icon {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #D2691E;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #8B4513;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #FFD39B;
+    border-radius: 12px;
+    background: #FFF3E6;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    background: #FFB347;
+    border: none;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #FF9F1C;
+    transform: translateY(-2px);
+}
+
+/* Modal 背景 */
+#resultModal {
+    display:none;
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.4);
+    justify-content:center;
+    align-items:center;
+}
+
+/* Modal內容 */
+.modal-content {
+    background:#FFF8E7;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    text-align:center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    animation: popIn 0.3s ease-out;
+}
+
+.modal-dog {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+#resultModal button {
+    background:#FFB347;
+    margin-top:15px;
+    border-radius: 12px;
+    padding:10px 20px;
+    font-size: 16px;
+}
+
+/* 動畫 */
+@keyframes popIn {
+    from { opacity:0; transform: scale(0.8); }
+    to { opacity:1; transform: scale(1); }
+}

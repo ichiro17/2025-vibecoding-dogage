@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狗狗年齡換算</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/1998/1998627.png" class="dog-icon">
+        <h2>🐾 狗狗年齡換算器 🐾</h2>
+
+        <label>狗狗的名字：</label>
+        <input type="text" id="dogName" placeholder="輸入狗狗的名字">
+
+        <label>狗狗的生日：</label>
+        <input type="date" id="birthDate">
+
+        <button onclick="calculateAge()">🐶 計算年齡</button>
+    </div>
+
+    <!-- 可愛彈跳視窗 -->
+    <div id="resultModal">
+        <div class="modal-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" class="modal-dog">
+            <h3>計算結果</h3>
+            <p id="resultText"></p>
+            <button onclick="closeModal()">關閉視窗</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
